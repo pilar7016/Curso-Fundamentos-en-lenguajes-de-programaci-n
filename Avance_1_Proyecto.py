@@ -10,9 +10,9 @@ tipo_cuenta = input("Tipo de cuenta: ").upper()
 if tipo_cuenta == "CORRIENTE" :
     print("¡Tipo de cuenta sí existe - Continuar con consignación!")
     consignacion = float(input("Valor a consignar: "))
-    if consignacion <= 1000000:
+    if consignacion < 1000000:
         print("¡No es posible realizar la consignación - Tope mínimo 1.000.000!")
-    elif consignacion >= 12000000:
+    elif consignacion > 12000000:
         print("¡No es posible realizar la consignación - Tope máximo 12.000.000!")
     else:
         print("¡Consignación realizada con éxito!")
@@ -24,9 +24,9 @@ if tipo_cuenta == "CORRIENTE" :
 elif tipo_cuenta == "AHORROS" :
     print("¡Tipo de cuenta sí existe - Continuar con consignación!")
     consignacion = float(input("Valor a consignar: "))
-    if consignacion <= 30000:
+    if consignacion < 30000:
         print("¡No es posible realizar la consignación - Tope mínimo 3.000!")
-    elif consignacion >= 3000000:
+    elif consignacion > 3000000:
         print("¡No es posible realizar la consignación - Tope máximo 3.000.000!")
     else:
         print("¡Consignación realizada con éxito!")  
